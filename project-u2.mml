@@ -46,7 +46,7 @@
       "id": "world",
       "class": "",
       "Datasource": {
-        "file": "##SHP_PATH##shoreline_300.shp"
+        "file": "/data/project/2u/donnees-externes/world_boundaries/shoreline_300.shp"
       },
       "srs-name": "900913",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -64,7 +64,7 @@
       "id": "coast-poly",
       "class": "",
       "Datasource": {
-        "file": "##SHP_PATH##processed_p.shp"
+        "file": "/data/project/2u/donnees-externes/world_boundaries/processed_p.shp"
       },
       "srs-name": "900913",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -82,7 +82,7 @@
       "id": "builtup",
       "class": "",
       "Datasource": {
-        "file": "##SHP_PATH##builtup_area.shp"
+        "file": "/data/project/2u/donnees-externes/world_boundaries/builtup_area.shp"
       },
       "srs-name": "mercator",
       "srs": "+proj=merc +datum=WGS84 +over",
@@ -100,7 +100,7 @@
       "id": "necountries",
       "class": "",
       "Datasource": {
-        "file": "##SHP_PATH##ne_110m_admin_0_boundary_lines_land.shp"
+        "file": "/data/project/2u/donnees-externes/world_boundaries/ne_110m_admin_0_boundary_lines_land.shp"
       },
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
@@ -118,7 +118,7 @@
       "id": "nepopulated",
       "class": "",
       "Datasource": {
-        "file": "##SHP_PATH##ne_10m_populated_places_fixed.shp"
+        "file": "/data/project/2u/donnees-externes/world_boundaries/ne_10m_populated_places_fixed.shp"
       },
       "srs-name": "WGS84",
       "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
@@ -138,7 +138,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "landcover",
       "class": "",
@@ -161,7 +161,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "landcover-line",
       "class": "",
@@ -183,7 +183,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "sports-grounds",
       "class": "",
@@ -206,7 +206,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "water-lines-casing",
       "class": "",
@@ -229,7 +229,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "water-lines-low-zoom",
       "class": "",
@@ -251,7 +251,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "water-areas",
       "class": "",
@@ -273,7 +273,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "water-areas-overlay",
       "class": "",
@@ -295,7 +295,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "glaciers-text",
       "class": "",
@@ -318,7 +318,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "water-lines",
       "class": "",
@@ -341,7 +341,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "dam",
       "class": "",
@@ -363,7 +363,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "marinas-area",
       "class": "",
@@ -385,7 +385,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "piers-area",
       "class": "",
@@ -408,7 +408,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "piers",
       "class": "",
@@ -431,7 +431,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "locks",
       "class": "",
@@ -454,7 +454,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "tunnels",
       "class": "",
@@ -477,7 +477,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "citywalls",
       "class": "",
@@ -500,7 +500,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "castlewalls",
       "class": "castlewalls",
@@ -522,7 +522,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "castlewalls-poly",
       "class": "castlewalls",
@@ -544,7 +544,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "landuse-overlay",
       "class": "",
@@ -567,7 +567,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "turning-circle-casing",
       "class": "",
@@ -590,7 +590,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "footbikecycle-tunnels",
       "class": "",
@@ -613,7 +613,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "tracks-tunnels",
       "class": "",
@@ -636,7 +636,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "line-features",
       "class": "cliffs barriers",
@@ -658,7 +658,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "polygon-barriers",
       "class": "barriers",
@@ -680,7 +680,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "highway-area-casing",
       "class": "",
@@ -703,7 +703,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "minor-roads-casing",
       "class": "",
@@ -725,7 +725,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "highway-area-fill",
       "class": "",
@@ -747,7 +747,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "buildings-lz",
       "class": "",
@@ -769,7 +769,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "buildings",
       "class": "",
@@ -792,7 +792,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "tracks-notunnel-nobridge",
       "class": "",
@@ -815,7 +815,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "minor-roads-fill",
       "class": "",
@@ -838,7 +838,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "turning-circle-fill",
       "class": "",
@@ -861,7 +861,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "ferry-routes",
       "class": "",
@@ -884,7 +884,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "aerialways",
       "class": "",
@@ -907,7 +907,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "roads",
       "class": "",
@@ -930,7 +930,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "waterway-bridges",
       "class": "",
@@ -953,7 +953,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "access-pre-bridges",
       "class": "access",
@@ -976,7 +976,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "direction-pre-bridges",
       "class": "directions",
@@ -999,7 +999,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-layer0",
       "class": "bridges",
@@ -1022,7 +1022,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-access0",
       "class": "access",
@@ -1045,7 +1045,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-directions0",
       "class": "directions",
@@ -1068,7 +1068,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-layer1",
       "class": "bridges",
@@ -1091,7 +1091,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-access1",
       "class": "access",
@@ -1114,7 +1114,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-directions1",
       "class": "directions",
@@ -1137,7 +1137,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-layer2",
       "class": "bridges",
@@ -1160,7 +1160,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-access2",
       "class": "access",
@@ -1183,7 +1183,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-directions2",
       "class": "directions",
@@ -1206,7 +1206,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-layer3",
       "class": "bridges",
@@ -1229,7 +1229,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-access3",
       "class": "access",
@@ -1252,7 +1252,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-directions3",
       "class": "directions",
@@ -1275,7 +1275,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-layer4",
       "class": "bridges",
@@ -1298,7 +1298,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-access4",
       "class": "access",
@@ -1321,7 +1321,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-directions4",
       "class": "directions",
@@ -1344,7 +1344,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-layer5",
       "class": "bridges",
@@ -1367,7 +1367,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-access5",
       "class": "access",
@@ -1390,7 +1390,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "bridges-directions5",
       "class": "directions",
@@ -1413,7 +1413,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "trams",
       "class": "",
@@ -1436,7 +1436,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "guideways",
       "class": "",
@@ -1459,7 +1459,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "admin-01234",
       "class": "",
@@ -1482,7 +1482,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "admin-5678",
       "class": "",
@@ -1505,7 +1505,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "admin-other",
       "class": "",
@@ -1528,7 +1528,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "placenames-large",
       "class": "country state",
@@ -1551,7 +1551,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "placenames-capital",
       "class": "",
@@ -1574,7 +1574,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "placenames-medium",
       "class": "",
@@ -1597,7 +1597,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "placenames-small",
       "class": "",
@@ -1620,7 +1620,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "stations",
       "class": "stations",
@@ -1642,7 +1642,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "stations-poly",
       "class": "stations",
@@ -1665,7 +1665,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "amenity-symbols",
       "class": "symbols",
@@ -1687,7 +1687,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "amenity-symbols-poly",
       "class": "symbols",
@@ -1710,7 +1710,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "amenity-points",
       "class": "points",
@@ -1732,7 +1732,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "amenity-points-poly",
       "class": "points",
@@ -1755,7 +1755,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "power-line",
       "class": "",
@@ -1778,7 +1778,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "power-minorline",
       "class": "",
@@ -1801,7 +1801,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "power-towers",
       "class": "",
@@ -1824,7 +1824,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "power-poles",
       "class": "",
@@ -1847,7 +1847,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "roads-text-ref-low-zoom",
       "class": "",
@@ -1870,7 +1870,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "highway-junctions",
       "class": "",
@@ -1893,7 +1893,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "roads-text-ref",
       "class": "",
@@ -1916,7 +1916,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "roads-text-name",
       "class": "",
@@ -1939,7 +1939,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "text",
       "class": "text",
@@ -1961,7 +1961,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "text-poly",
       "class": "text",
@@ -1983,7 +1983,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "area-text",
       "class": "",
@@ -2006,7 +2006,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "interpolation",
       "class": "",
@@ -2029,7 +2029,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "housenumbers",
       "class": "",
@@ -2052,7 +2052,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "housenames",
       "class": "",
@@ -2074,7 +2074,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "misc-boundaries",
       "class": "",
@@ -2096,7 +2096,7 @@
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
-        "host": "##DB_HOST##", "dbname": "##DB_NAME##", "user": "##DB_USER##", "password": "##DB_PASSWORD##"
+        "host": "osm2pgsql-monde.openstreetmap.fr", "dbname": "osm2pgsql", "user": "mapnik", "password": "ootaephi"
       },
       "id": "theme-park",
       "class": "",

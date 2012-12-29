@@ -24,3 +24,5 @@ carto <your project.mml> > your_style.xml
 # Live install
 
 http://layers.openstreetmap.fr (layer 2u) shows you the last stable result of this style
+
+More info here as well : http://wiki.openstreetmap.org/wiki/2u

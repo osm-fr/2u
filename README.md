@@ -9,20 +9,6 @@ on the wiki and significantly used is meant to be shown on this style, not matte
 # Installation
 * Read : https://github.com/gravitystorm/openstreetmap-carto/blob/master/README.md
 
-To customize your style you can use the customize.sh script to replace shapefiles path, database name, user and password
-
-```
-./customize.sh <your project.mml> <database host> <database name> <database user> <database password> <shp_path>
-```
-
-To "compile" your style, you must install Node.js and carto
-the run 
-```
-carto <your project.mml> > your_style.xml
-```
-
-# Live install
-
 http://layers.openstreetmap.fr (layer 2u) shows you the last stable result of this style
 
 More info here as well : http://wiki.openstreetmap.org/wiki/2u

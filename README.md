@@ -22,6 +22,9 @@ the run
 carto <your project.mml> > your_style.xml
 ```
 
+This style is meant to work with a osm2pgsql schema with the default osm2pgsql style + the "--hstore" switch to import all tags that are not
+allready colums into a hstore "tags" column
+
 # Live install
 
 http://layers.openstreetmap.fr (layer 2u) shows you the last stable result of this style

@@ -1,0 +1,11 @@
+This benchs.sh script provides a set of benchmark zones to generate image
+from the 2u styles and check if a patch works and does or doesn't increase the
+rendering time compared to before.
+
+This sure could be much better, less dependent on the data, but that a lot
+of work !
+
+It uses nik2img.py (and that program should be in you path)
+
+To run it :
+./benchs.sh <xml style> <generated images directory>

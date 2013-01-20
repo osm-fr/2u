@@ -1,2 +1,7 @@
-#Format is name,bbox
-margeriaz,6 6.1 45.6 45.7
+#Format is name;bbox
+#-zXX are just approximative
+
+margeriaz-ski-hiking-z14;6.02 45.623 6.1 45.627
+paris-town-center-z14;2.3 48.81 2.5 48.88
+paris-town-center-z16;2.32 48.812 2.36 48.818
+paris-town-center-z18;2.342 48.852 2.344 48.854

@@ -172,24 +172,6 @@
   }
 }
 
-#landuse-overlay {
-  [landuse = 'military'][zoom >= 10]::landuse {
-    polygon-pattern-file: url('symbols/military_red_hz2.png');
-    line-color: #f55;
-    line-width: 3;
-    line-opacity: 0.329;
-  }
-  [leisure = 'nature_reserve'][zoom >= 10] {
-    polygon-pattern-file: url('symbols/nature_reserve5.png');
-    line-color: #6c3;
-    line-width: 0.5;
-    [zoom >= 14] {
-      polygon-pattern-file: url('symbols/nature_reserve6.png');
-      line-width: 1;
-    }
-  }
-}
-
 #area-text {
   [way_area >= 150000][zoom >= 14],
   [way_area >= 80000][zoom >= 15],

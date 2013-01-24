@@ -1,3 +1,20 @@
+
+/* calculated with C*cos(y)/2^(z+8)
+   C = perimiter of Earth = 2 * pi * 6372.7982 km
+   y = latitude = 45°
+*/
+@meterperpixel_z10: 107.936;
+@meterperpixel_z11: 53.968;
+@meterperpixel_z12: 26.984;
+@meterperpixel_z13: 13.492;
+@meterperpixel_z14: 6.746;
+@meterperpixel_z15: 3.373;
+@meterperpixel_z16: 1.686;
+@meterperpixel_z17: 0.843;
+@meterperpixel_z18: 0.421;
+@meterperpixel_z19: 0.210;
+@meterperpixel_z20: 0.105;
+
 #turning-circle-casing {
   [int_tc_type = 'tertiary'][zoom >= 15] {
     point-file: url('symbols/turning_circle-tert-casing.18.png');
@@ -517,6 +534,8 @@
       }
       [zoom >= 16] { line-width: 11; }
       [zoom >= 17] { line-width: 16; }
+      [zoom >= 18] { line-width: (5 / @meterperpixel_z18); }
+      [zoom >= 19] { line-width: (5 / @meterperpixel_z19); }
     }
   }
 
@@ -531,6 +550,8 @@
         line-cap: round;
       }
       [zoom >= 16] { line-width: 7; }
+      [zoom >= 17] { line-width: (5 / @meterperpixel_z17); }
+      [zoom >= 18] { line-width: (5 / @meterperpixel_z18); }
     }
     [service = 'INT-minor'][tunnel != 'yes'] {
       [zoom >= 16] {

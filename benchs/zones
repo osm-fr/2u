@@ -1,7 +1,8 @@
 #Format is name;bbox
 #-zXX are just approximative
 
-antibes-fort-carre-z19;7.125 43.588 7.129 43.591
+antibes-town-center-z19;7.125 43.582 7.128 43.584
+antibes-motorway-z19;7.082 43.601 7.086 43.604
 margeriaz-ski-hiking-z14;6.02 45.623 6.1 45.627
 paris-town-center-z14;2.3 48.81 2.5 48.88
 paris-town-center-z16;2.32 48.812 2.36 48.818

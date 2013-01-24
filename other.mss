@@ -410,6 +410,8 @@
     [zoom >= 13] { line-width: 4.5; }
     [zoom >= 15] { line-width: 8; }
     [zoom >= 17] { line-width: 11; }
+    [zoom >= 18] { line-width: (5 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (5 / @meterperpixel_z19); }
   }
 
   [highway = 'trunk_link'][tunnel != 'yes'] {
@@ -534,8 +536,8 @@
       }
       [zoom >= 16] { line-width: 11; }
       [zoom >= 17] { line-width: 16; }
-      [zoom >= 18] { line-width: (5 / @meterperpixel_z18); }
-      [zoom >= 19] { line-width: (5 / @meterperpixel_z19); }
+      [zoom >= 18] { line-width: (5.3 / @meterperpixel_z18); }
+      [zoom >= 19] { line-width: (5.3 / @meterperpixel_z19); }
     }
   }
 
@@ -550,8 +552,8 @@
         line-cap: round;
       }
       [zoom >= 16] { line-width: 7; }
-      [zoom >= 17] { line-width: (5 / @meterperpixel_z17); }
-      [zoom >= 18] { line-width: (5 / @meterperpixel_z18); }
+      [zoom >= 17] { line-width: (5.3 / @meterperpixel_z17); }
+      [zoom >= 18] { line-width: (5.3 / @meterperpixel_z18); }
     }
     [service = 'INT-minor'][tunnel != 'yes'] {
       [zoom >= 16] {
@@ -560,6 +562,8 @@
         line-cap: round;
         line-join: round;
       }
+      [zoom >= 17] { line-width: (4.3 / @meterperpixel_z17); }
+      [zoom >= 18] { line-width: (4.3 / @meterperpixel_z18); }
     }
     [tunnel = 'yes'][zoom >= 14] {
       line-color: #999;
@@ -748,6 +752,8 @@
     }
     [zoom >= 15] { line-width: 8.5; }
     [zoom >= 17] { line-width: 11; }
+    [zoom >= 18] { line-width: (11 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (11 / @meterperpixel_z19); }
   }
 
   [highway = 'trunk'][tunnel != 'yes'] {
@@ -760,6 +766,8 @@
     [zoom >= 13] { line-width: 7; }
     [zoom >= 15] { line-width: 11; }
     [zoom >= 17] { line-width: 15.5; }
+    [zoom >= 18] { line-width: (11 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (11 / @meterperpixel_z19); }
   }
 
   [highway = 'primary'][tunnel != 'yes'] {
@@ -784,6 +792,8 @@
     [zoom >= 13] { line-width: 8; }
     [zoom >= 15] { line-width: 11; }
     [zoom >= 17] { line-width: 15.5; }
+    [zoom >= 18] { line-width: (7 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (7 / @meterperpixel_z19); }
   }
 
   [highway = 'tertiary'],
@@ -818,6 +828,8 @@
       [zoom >= 15] { line-width: 6.5; }
       [zoom >= 16] { line-width: 9.4; }
       [zoom >= 17] { line-width: 13; }
+      [zoom >= 18] { line-width: (5 / @meterperpixel_z18); }
+      [zoom >= 19] { line-width: (5 / @meterperpixel_z19); }
     }
   }
 
@@ -852,6 +864,9 @@
       line-color: white;
     }
     [zoom >= 16] { line-width: 6; }
+    [zoom >= 17] { line-width: (5 / @meterperpixel_z17); }
+    [zoom >= 18] { line-width: (5 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (5 / @meterperpixel_z19); }
   }
 
   [highway = 'service'][service = 'INT-minor'][zoom >= 16] {
@@ -859,6 +874,9 @@
     line-color: #fff;
     line-join: round;
     line-cap: round;
+    [zoom >= 17] { line-width: (4 / @meterperpixel_z17); }
+    [zoom >= 18] { line-width: (4 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (4 / @meterperpixel_z19); }
   }
 
   [highway = 'pedestrian'][zoom >= 13] {

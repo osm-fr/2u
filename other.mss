@@ -780,7 +780,15 @@
     [zoom >= 13] { line-width: 7; }
     [zoom >= 15] { line-width: 11; }
     [zoom >= 17] { line-width: 15.5; }
+    [zoom >= 18] { line-width: (14 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (14 / @meterperpixel_z19); }
   }
+
+  [highway = 'primary'][tunnel != 'yes'][oneway = 'yes'] {
+    [zoom >= 18] { line-width: (7 / @meterperpixel_z18); }
+    [zoom >= 19] { line-width: (7 / @meterperpixel_z19); }
+  }
+
 
   [highway = 'secondary'][tunnel != 'yes'] {
     [zoom >= 12] {

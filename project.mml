@@ -2133,6 +2133,6 @@
   ],
   "scale": 1,
   "metatile": 2,
-  "name": "OpenStreetMap Carto",
-  "description": "A faithful reimplementation of the standard OpenStreetMap style"
+  "name": "2u",
+  "description": "2u, an Openstreetmap data based style to provide an Ugly and Usefull map"
 }

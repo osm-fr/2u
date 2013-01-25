@@ -36,5 +36,5 @@ More info here as well : http://wiki.openstreetmap.org/wiki/2u
 
 ## Quick launch
 
-  make bench    // to compile the style, and check it on various tiles
-  make install  // to install it on layers.openstreetmap.fr
+    make bench    // to compile the style, and check it on various tiles
+    make install  // to install it on layers.openstreetmap.fr

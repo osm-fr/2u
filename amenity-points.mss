@@ -5,7 +5,7 @@
   }
 
   [tourism = 'wilderness_hut'][zoom >= 14]::tourism {
-    point-file: url('symbols/wilderness_hut.20.png');
+    point-file: url('symbols/wilderness_hut.16.png');
     point-placement: interior;
   }
 

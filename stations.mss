@@ -4,6 +4,7 @@
     point-placement: interior;
   }
 
+  [public_transport = 'station'][zoom >= 12],
   [railway = 'station'][zoom >= 12] {
     point-file: url('symbols/halt.png');
     point-placement: interior;
@@ -33,6 +34,7 @@
     */
   }
 
+  [public_transport = 'platform'],
   [railway = 'halt'],
   [railway = 'tram_stop'],
   [aerialway = 'station']::aerialway {

@@ -25,6 +25,9 @@ carto <your project.mml> > your_style.xml
 This style is meant to work with a osm2pgsql schema with the default osm2pgsql style + the "--hstore" switch to import all tags that are not
 allready colums into a hstore "tags" column
 
+Check the https://github.com/osm-fr/osm2pgsql-import-tools/blob/master/default.style file to see what are tags available as columns and those accessible thru
+the hstore(tags)->'tag'="value" syntax
+
 # Live install
 
 http://layers.openstreetmap.fr (layer 2u) shows you the last stable result of this style

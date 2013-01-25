@@ -4,6 +4,11 @@
     point-placement: interior;
   }
 
+  [tourism = 'wilderness_hut'][zoom >= 14]::tourism {
+    point-file: url('symbols/wilderness_hut.20.png');
+    point-placement: interior;
+  }
+
   [amenity = 'shelter'][zoom >= 16]::amenity {
     point-file: url('symbols/shelter2.p.16.png');
     point-placement: interior;

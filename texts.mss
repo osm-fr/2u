@@ -212,8 +212,9 @@
     text-wrap-width: 20;
     text-placement: interior;
   }
-
-  [tourism = 'alpine_hut'][zoom >= 15]::tourism {
+  [tourism = 'wilderness_hut']::tourism,
+  [tourism = 'alpine_hut']::tourism {
+    [zoom >= 15] {
     text-name: "[name]";
     text-size: 9;
     text-fill: #6699cc;
@@ -221,14 +222,15 @@
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-placement: interior;
-    [zoom >= 16] {
-      ele/text-name: "[ele]";
-      ele/text-size: 8;
-      ele/text-fill: #6699cc;
-      ele/text-dy: 22;
-      ele/text-face-name: @oblique-fonts;
-      ele/text-halo-radius: 1;
-      ele/text-placement: interior;
+      [zoom >= 16] {
+        ele/text-name: "[ele]";
+        ele/text-size: 8;
+        ele/text-fill: #6699cc;
+        ele/text-dy: 22;
+        ele/text-face-name: @oblique-fonts;
+        ele/text-halo-radius: 1;
+        ele/text-placement: interior;
+      }
     }
   }
 

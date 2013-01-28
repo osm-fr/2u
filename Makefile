@@ -3,6 +3,9 @@ MSS_SOURCES=$(shell grep .mss ${MML_SOURCE} | cut -d'"' -f2)
 
 all: bench install
 
+project.mml: project.mml.in
+	./remove-end-slashes.sh $^ > $@
+
 
 2u.mml: tools/cartocc.js project.mml local-config/2u.json ${MSS_SOURCES}
 	node tools/cartocc.js project.mml local-config/2u.json > $@

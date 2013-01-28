@@ -2368,7 +2368,10 @@
 
 #roads-text-name {
   [highway = 'trunk'],
-  [highway = 'primary'] {
+  [highway = 'primary'],
+  [highway = 'construction'][construction = 'motorway'],
+  [highway = 'construction'][construction = 'trunk'],
+  [highway = 'construction'][construction = 'primary'] {
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 8;
@@ -2384,7 +2387,8 @@
       text-size: 10;
     }
   }
-  [highway = 'secondary'] {
+  [highway = 'secondary'],
+  [highway = 'construction'][construction = 'secondary'] {
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 8;
@@ -2400,7 +2404,8 @@
       text-size: 10;
     }
   }
-  [highway = 'tertiary'] {
+  [highway = 'tertiary'],
+  [highway = 'construction'][construction = 'tertiary'] {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 9;
@@ -2413,21 +2418,10 @@
       text-size: 11;
     }
   }
-  [highway = 'proposed'],
-  [highway = 'construction'] {
-    [zoom >= 13] {
-      text-name: "[name]";
-      text-size: 9;
-      text-fill: #000;
-      text-face-name: @book-fonts;
-      text-halo-radius: 1;
-    }
-    [zoom >= 16] {
-      text-size: 11;
-    }
-  }
   [highway = 'residential'],
-  [highway = 'unclassified'] {
+  [highway = 'unclassified'],
+  [highway = 'construction'][construction = 'residential'],
+  [highway = 'construction'][construction = 'unclassified'] {
     [zoom >= 15] {
       text-name: "[name]";
       text-size: 8;
@@ -2440,6 +2434,18 @@
       text-size: 9;
     }
     [zoom >= 17] {
+      text-size: 11;
+    }
+  }
+  [highway = 'proposed'] {
+    [zoom >= 13] {
+      text-name: "[name]";
+      text-size: 9;
+      text-fill: #000;
+      text-face-name: @book-fonts;
+      text-halo-radius: 1;
+    }
+    [zoom >= 16] {
       text-size: 11;
     }
   }

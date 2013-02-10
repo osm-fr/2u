@@ -8,6 +8,10 @@ on the wiki and significantly used is meant to be shown on this style, not matte
 
 ## Installation
 * Read : https://github.com/gravitystorm/openstreetmap-carto/blob/master/README.md
+* Install nodejs http://nodejs.org/
+* Install carto https://github.com/mapbox/carto/blob/master/README.md (npm install -g carto + npm install -g millstone)
+* Install mapnik
+* nik2img is required for benchmarking and rendering
 
 To customize your style you can use the cartoCC tool in /tools/cartocc.js script to add your database name, user and password
 See ./tools/README.md

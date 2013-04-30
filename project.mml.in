@@ -377,7 +377,7 @@ case when leisure='pitch' then 2 \
       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel \
       from planet_osm_line \
       where waterway in ('weir','river','canal','derelict_canal','stream','drain','ditch','wadi') \
-        and (bridge is null or bridge not in ('yes','true','1','aqueduct')) \
+        and (bridge is null or bridge='no' ) \
       order by z_order \
       ) as water_lines",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -920,7 +920,9 @@ case when leisure='pitch' then 2 \
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,tracktype from planet_osm_line where highway='track' and (bridge is null or bridge in ('no','false','0')) and (tunnel is null or tunnel in ('no','false','0'))) as tracks",
+        "table": "(select way,tracktype from planet_osm_line where highway='track' \
+	and (bridge is null or bridge ='no') \
+	and (tunnel is null or tunnel='no' )) as tracks",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
@@ -944,9 +946,7 @@ case when leisure='pitch' then 2 \
       "Datasource": {
         "type": "postgis",
         "table": "      (select way, \
-       coalesce(highway,aeroway) as highway, \
-       horse,bicycle,foot,construction, \
-       case when tunnel in ('yes','true','1') then 'yes'::text else 'no'::text end as tunnel, \
+       coalesce(highway,aeroway) as highway, horse,bicycle,foot,construction, tunnel, \
        case when bridge in ('yes','true','1','viaduct') then 'yes'::text else 'no'::text end as bridge, \
        case when railway in ('spur','siding') \
               or (railway='rail' and service in ('spur','siding','yard')) \
@@ -1094,7 +1094,10 @@ case when leisure='pitch' then 2 \
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,name from planet_osm_line where waterway='canal' and bridge in ('yes','true','1','aqueduct') order by z_order) as water",
+        "table": "(select way,name from planet_osm_line where waterway='canal' \
+	and bridge is not null and bridge !='no' \
+	order by z_order) as water",
+
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
@@ -1121,7 +1124,7 @@ case when leisure='pitch' then 2 \
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service \
        from planet_osm_line \
        where access is not null and highway is not null \
-         and (bridge is null or bridge not in ('yes','true','1','viaduct')) \
+         and (bridge is null or bridge='no') \
       ) as access",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
@@ -1150,7 +1153,7 @@ case when leisure='pitch' then 2 \
        from planet_osm_line \
        where oneway is not null \
          and (highway is not null or railway is not null or waterway is not null) \
-         and (bridge is null or bridge not in ('yes','true','1','viaduct')) \
+         and (bridge is null or bridge='no') \
       ) as directions",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
@@ -1182,7 +1185,7 @@ case when leisure='pitch' then 2 \
        where (highway is not null \
               or aeroway in ('runway','taxiway') \
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction')) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and (layer is null or layer = '0') \
        order by z_order \
       ) as roads",
@@ -1212,7 +1215,7 @@ case when leisure='pitch' then 2 \
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service \
        from planet_osm_line \
        where access is not null and highway is not null \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and (layer is null or layer in ('-5','-4','-3','-2','-1','0')) \
       ) as access",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1242,7 +1245,7 @@ case when leisure='pitch' then 2 \
        from planet_osm_line \
        where oneway is not null \
          and (highway is not null or railway is not null or waterway is not null) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and (layer is null or layer in ('-5','-4','-3','-2','-1','0')) \
       ) as directions",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1275,7 +1278,7 @@ case when leisure='pitch' then 2 \
        where (highway is not null \
               or aeroway in ('runway','taxiway') \
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction')) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '1' \
        order by z_order \
       ) as roads",
@@ -1305,7 +1308,7 @@ case when leisure='pitch' then 2 \
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service \
        from planet_osm_line \
        where access is not null and highway is not null \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '1' \
       ) as access",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1335,7 +1338,7 @@ case when leisure='pitch' then 2 \
        from planet_osm_line \
        where oneway is not null \
          and (highway is not null or railway is not null or waterway is not null) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '1' \
       ) as directions",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1368,7 +1371,7 @@ case when leisure='pitch' then 2 \
        where (highway is not null \
               or aeroway in ('runway','taxiway') \
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction')) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '2' \
        order by z_order \
       ) as roads",
@@ -1398,7 +1401,7 @@ case when leisure='pitch' then 2 \
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service \
        from planet_osm_line \
        where access is not null and highway is not null \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '2' \
       ) as access",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1428,7 +1431,7 @@ case when leisure='pitch' then 2 \
        from planet_osm_line \
        where oneway is not null \
          and (highway is not null or railway is not null or waterway is not null) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '2' \
       ) as directions",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1461,7 +1464,7 @@ case when leisure='pitch' then 2 \
        where (highway is not null \
               or aeroway in ('runway','taxiway') \
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction')) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '3' \
        order by z_order \
       ) as roads",
@@ -1491,7 +1494,7 @@ case when leisure='pitch' then 2 \
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service \
        from planet_osm_line \
        where access is not null and highway is not null \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '3' \
       ) as access",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1521,7 +1524,7 @@ case when leisure='pitch' then 2 \
        from planet_osm_line \
        where oneway is not null \
          and (highway is not null or railway is not null or waterway is not null) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '3' \
       ) as directions",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1554,7 +1557,7 @@ case when leisure='pitch' then 2 \
        where (highway is not null \
               or aeroway in ('runway','taxiway') \
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction')) \
-         and bridge in ('yes','true','1','viaduct') \
+   	 and bridge is not null and bridge!='no' \
          and layer = '4' \
        order by z_order \
       ) as roads",
@@ -1584,7 +1587,7 @@ case when leisure='pitch' then 2 \
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service \
        from planet_osm_line \
        where access is not null and highway is not null \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '4' \
       ) as access",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1614,7 +1617,7 @@ case when leisure='pitch' then 2 \
        from planet_osm_line \
        where oneway is not null \
          and (highway is not null or railway is not null or waterway is not null) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '4' \
       ) as directions",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1647,7 +1650,7 @@ case when leisure='pitch' then 2 \
        where (highway is not null \
               or aeroway in ('runway','taxiway') \
               or railway in ('light_rail','subway','narrow_gauge','rail','spur','siding','disused','abandoned','construction')) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '5' \
        order by z_order \
       ) as roads",
@@ -1677,7 +1680,7 @@ case when leisure='pitch' then 2 \
        case when service in ('parking_aisle','drive-through','driveway') then 'INT-minor'::text else 'INT-normal'::text end as service \
        from planet_osm_line \
        where access is not null and highway is not null \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '5' \
       ) as access",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1707,7 +1710,7 @@ case when leisure='pitch' then 2 \
        from planet_osm_line \
        where oneway is not null \
          and (highway is not null or railway is not null or waterway is not null) \
-         and bridge in ('yes','true','1','viaduct') \
+         and bridge is not null and bridge!='no' \
          and layer = '5' \
       ) as directions",
         "extent": "-20037508,-19929239,20037508,19929239",
@@ -1732,7 +1735,10 @@ case when leisure='pitch' then 2 \
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "(select way,railway,bridge from planet_osm_line where railway='tram' and (tunnel is null or tunnel not in ('yes','true','1'))) as trams",
+        "table": "(select way,railway,bridge from planet_osm_line \
+	where railway='tram' \
+	and (tunnel is null or tunnel = 'no') \
+	) as trams",
         "extent": "-20037508,-19929239,20037508,19929239",
         "key_field": "",
         "geometry_field": "way",
@@ -2292,7 +2298,7 @@ case when leisure='pitch' then 2 \
       "Datasource": {
         "type": "postgis",
         "table": "      (select way,coalesce(highway,aeroway) as highway,ref,char_length(ref) as length, \
-       case when bridge in ('yes','true','1') then 'yes'::text else 'no'::text end as bridge \
+       case when bridge is not null and bridge != 'no' then 'yes'::text else 'no'::text end as bridge \
        from planet_osm_line \
        where (highway is not null or aeroway is not null) \
          and ref is not null \

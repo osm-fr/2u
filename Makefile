@@ -1,4 +1,4 @@
-MML_SOURCE=project.mml
+MML_SOURCE=project.mml.in
 MSS_SOURCES=$(shell grep .mss ${MML_SOURCE} | cut -d'"' -f2)
 
 all: bench install
@@ -22,3 +22,8 @@ install: ../prod/2u.xml
 
 bench: 2u.xml
 	cd benchs && ./benchs.sh ../2u.xml images
+
+clean: 
+	rm 2u.xml 2u.mml project.mml
+	
+	

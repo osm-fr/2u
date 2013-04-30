@@ -40,5 +40,6 @@ More info here as well : http://wiki.openstreetmap.org/wiki/2u
 
 ## Quick launch
 
+    make          // to simply compile the style and create a 2u.xml mapnik style file
     make bench    // to compile the style, and check it on various tiles
     make install  // to install it on layers.openstreetmap.fr

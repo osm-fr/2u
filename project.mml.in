@@ -946,7 +946,8 @@ case when leisure='pitch' then 2 \
       "Datasource": {
         "type": "postgis",
         "table": "      (select way, \
-       coalesce(highway,aeroway) as highway, horse,bicycle,foot,construction, tunnel, \
+       coalesce(highway,aeroway) as highway, horse,bicycle,foot,construction, \
+       case when tunnel in ('yes','true','1') then 'yes'::text else 'no'::text end as tunnel, \
        case when bridge in ('yes','true','1','viaduct') then 'yes'::text else 'no'::text end as bridge, \
        case when railway in ('spur','siding') \
               or (railway='rail' and service in ('spur','siding','yard')) \

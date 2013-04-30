@@ -25,5 +25,15 @@ bench: 2u.xml
 
 clean: 
 	rm 2u.xml 2u.mml project.mml
+
+flush_europe_8:
+        render_list -a -f -n 4 -m 2u -s /var/run/renderd/renderd.sock -z 8 -Z 8 -x 124 -X 137 -y 81 -Y 92
+
+flush_europe_9:
+        render_list -a -f -n 4 -m 2u -s /var/run/renderd/renderd.sock -z 9 -Z 9 -x 249 -X 273 -y 165 -Y 184
+
+flush_europe_10:
+        render_list -a -f -n 4 -m 2u -s /var/run/renderd/renderd.sock -z 10 -Z 10 -x 499 -X 551 -y 327 -Y 369
+
 	
 	

@@ -1,0 +1,13 @@
+[
+    {
+        "if": {
+            "Datasource.type": "postgis"
+        },
+        "then": {
+            "Datasource.dbname": "osm2pgsql",
+            "Datasource.host": "localhost",
+            "Datasource.password": "your-password",
+            "Datasource.user": "your-user"
+        }
+    }
+]

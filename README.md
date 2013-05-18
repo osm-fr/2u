@@ -1,7 +1,7 @@
 # 2u
 
-A rendering project using OpenStreetMap data based on the work of Andy Allan¹ to convert the osm.org style to CartoCSS
-¹ https://github.com/gravitystorm/openstreetmap-carto
+A rendering project using OpenStreetMap data based on the work of Andy Allan to convert the osm.org style to CartoCSS
+  https://github.com/gravitystorm/openstreetmap-carto
 
 2u stands for "Ugly and Usefull", unlike the "defaut osm.org" style made for about every uses, this one focuses on Openstreetmap contributors. Every thing approved 
 on the wiki and significantly used is meant to be shown on this style, not matter how ugly, the goal is to show them. (Unless there are conflicts with other tags)
@@ -15,16 +15,8 @@ on the wiki and significantly used is meant to be shown on this style, not matte
 
 To customize your style you can use the cartoCC tool in /tools/cartocc.js script to add your database name, user and password
 See ./tools/README.md
+(There is a sample file in ./local-config/2u-sample.json you can adapt to your credentials then save to 2u.json)
 
-```
-node ./tools/cartocc.js <path-to-project.mml> <path to your .json parametre file> > path-to-project_with_custom_db_credential.mml
-```
-
-To "compile" your style, you must install Node.js and carto
-then run 
-```
-carto <your project.mml> > your_style.xml
-```
 
 This style is meant to work with a osm2pgsql schema with the default osm2pgsql style + the "--hstore" switch to import all tags that are not
 allready colums into a hstore "tags" column
